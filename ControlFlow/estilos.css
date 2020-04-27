@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+   background-color: #f1f2f6;
+}
+
+h1 {
+  font-size: 3.8rem;
+  padding-bottom: 2rem;
+  max-width: 60 rem;
+  line-height: 2;
+}

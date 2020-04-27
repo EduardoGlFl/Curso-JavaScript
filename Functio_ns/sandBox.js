@@ -32,7 +32,7 @@ console.log(area);
 const area = calcArea(5);
 console.log("area is:", area); */
 
-//Practicando funciones flecha 
+//Practicando funciones flecha
 
 /* const greet = function(){
   return 'hello, world';
@@ -60,7 +60,6 @@ console.log(greet());
 console.log(bill([10, 15, 30], 0.2));
 */
 
-
 /******FUNCIONES Y METODOS*******/
 /* const name = 'Eduardo';
 //Funcion
@@ -82,10 +81,25 @@ myFunc(function (value){
   console.log(value);
 }); */
 
-let people = ['Sansa', 'Jaimie', 'Cersei', 'Robert', 'Ned'];
+/* let people = ['Sansa', 'Jaimie', 'Cersei', 'Robert', 'Ned'];
 
 const logPerson = (person, index) => {
   console.log(`${index} - Hello ${person}`);
 }
 
-people.forEach(logPerson);
+people.forEach(logPerson); */
+
+/******GET A REFERENCE FROM THE 'ul'******/
+const ul = document.querySelector(".people");
+
+const people = ["Sansa", "Jaimie", "Cersei", "Robert", "Ned"];
+
+let html = ``;
+
+people.forEach(function (person) {
+  //create html template
+  html += `<li style="color: blue">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
